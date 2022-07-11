@@ -43,7 +43,7 @@ const cube = new THREE.Mesh( geometry, material );
 OrbitControls
 ------------------------------*/
 const controls = new OrbitControls( camera, renderer.domElement );
-controls.enabled = false
+// controls.enabled = false
 
 
 /*------------------------------
