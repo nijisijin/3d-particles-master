@@ -1,36 +1,269 @@
+* {
+  font-family: "Voyage";
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #161616;
 }
 
 canvas {
   position: fixed;
-  
-  top: 0;
-  left: 0;
+  z-index: -6;
   width: 100%;
   height: 100%;
 }
 
-#controllers {
+
+/* Sticky NavBar */
+.menu-container {
   position: fixed;
-  z-index: 1;
-  left: 0;
   top: 0;
-  text-align: center;
   width: 100%;
-  padding: 10px;
+}
+
+.menu {
+  background: #fff;
+  height: 1.6rem;
+  margin: 1.6rem;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  /* z-index: 1; */
+}
+
+.menu:hover {
+  height: 26.5rem;
+}
+
+@media(max-width: 600px) {
+  .menu:hover {
+    height: 50vh;
+  }
+}
+
+.menu-shrink {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.menu-left {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex: 1;
+  text-align: left;
+}
+
+.menu-center {
+  display: flex;
+  flex:1;
+  text-align: center;
+}
+
+.menu-right {
+  align-items: center;
+  flex:1;
+  text-align: center;
+}
+
+.menu-brand {
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.menu-center a {
+  color: #000;
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media(max-width: 100px) {
+  .menu-center {
+    display: none;
+  }
+}
+
+.menu-right a {
+  color: #000;
+  /* padding: 0 20px; */
+  padding-left: 25rem;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.menu-expand {
+  position: relative;
+  width: 100%;
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-expand p {
+  margin: 0.2rem 0;
+  font-size: 3.2rem;
+  line-height: 70px;
+}
+
+.menu-expand .divider{
+  position: relative;
+  width: 0%;
+  height: 0.5px;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.menu:hover .divider{
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 0.25s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.menu-expand .row-1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2.2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.02s ease;
+}
+
+.menu:hover .row-1{
+  transition: 0.6s;
+  transition-delay: 0.3s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.menu-expand .row-1 span{
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+}
+
+.menu-expand .row-2{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 2.2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.02s ease;
+}
+.menu-expand .row-2 p{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.menu:hover .row-2{
+  transition: 0.6s;
+  transition-delay: 0.4s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.menu-expand .row-3{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.02s ease;
+}
+.menu-expand .row-3 p{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+  
+}
+
+.menu:hover .row-3{
+  transition: 0.6s;
+  transition-delay: 0.5s;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.arrows span{
+  /* font-family: "Bigilla", sans-serif; */
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  background: #000;
+  border-radius: 100px;
+}
+/* Sticky NavBar */
+
+
+
+
+#controllers {
+
+  top: 100px;
+  height: 10vh;
+  width: 100%;
+  padding-top: 12vh;
+
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.1s;
+  line-height: 2px;
+
+  mix-blend-mode:multiply ;
+  position: fixed;
+  z-index: -1;
+  text-align: center;
+  
 }
 
 .button {
   border: none;
-  background: white;
+  background: none;
   color: black;
-  padding: 8px 20px;
-  border-radius: 15px;
+  
   cursor: pointer;
   outline: none;
-  margin: 5px;
+
   font-family: sans-serif;
+
+  margin: 5vh;
+  padding-left: 0vh;
+  padding-right: 5vh;
+  /* padding-top: 10vh; */
+  
+
+  width: 50vw;
+  
+  font-size: 3.5vw;
+  cursor: pointer;
+  transition: opacity 0.1s;
+  line-height: 30px;
 }

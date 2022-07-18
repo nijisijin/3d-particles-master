@@ -26,7 +26,7 @@ void main() {
 
  pos *= uScale;
 
-  vec4 mvPosition = modelViewMatrix * vec4( pos, 1.0 );
+  vec4 mvPosition = modelViewMatrix * vec4( pos, .6);
   gl_Position = projectionMatrix * mvPosition;
-  gl_PointSize = 4.0 / -mvPosition.z;
+  gl_PointSize = 6.0 / -mvPosition.z;
 }

@@ -15,6 +15,7 @@ class Model {
         this.scene = obj.scene
         this.placeOnLoad = obj.placeOnLoad
 
+
         this.color1 = obj.color1
         this.color2 = obj.color2
         this.background = obj.background
@@ -38,6 +39,7 @@ class Model {
             Original Mesh
             ------------------------------*/        
             this.mesh = response.scene.children[0]
+
             
             /*------------------------------
             Material Mesh
@@ -55,9 +57,12 @@ class Model {
             // console.log(this.geometry)
 
 
+
+
             /*------------------------------
             Particles Material
             ------------------------------*/ 
+           
             // this.particlesMaterial = new THREE.PointsMaterial({
             //     color: 'red',
             //     size: 0.02,
@@ -110,12 +115,14 @@ class Model {
             this.particlesGeometry.setAttribute('position', 
             new THREE.BufferAttribute(particlesPosition, 3))
             this.particlesGeometry.setAttribute('aRandom', new THREE.BufferAttribute(particlesRandomness,3))
-            console.log(this.particlesGeometry)
+            // console.log(this.particlesGeometry)
 
             /*------------------------------
             Particles
             ------------------------------*/ 
             this.particles = new THREE.Points(this.particlesGeometry, this.particlesMaterial)
+            // this.particles = new THREE.Points(this.geometry, this.material)
+            
 
 
             /*------------------------------
