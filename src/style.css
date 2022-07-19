@@ -8,7 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: none;
   z-index: -3;
 }
 
@@ -259,17 +258,16 @@ canvas {
 
   font-family: sans-serif;
 
-  margin: 4vh;
-  padding-left: 0vh;
-  padding-right: 5vh;
+  margin: 5vh;
+  padding-right: 5vw;
   /* padding-top: 10vh; */
   z-index: 1;
   
 
   width: 50vw;
   text-align: center;
-  font-size: 6vh;
+  font-size: 4vh;
   cursor: pointer;
   transition: opacity 0.1s;
-  line-height: 5vw;
+  line-height: 1vh;
 }
