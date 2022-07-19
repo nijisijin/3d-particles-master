@@ -1,6 +1,7 @@
 * {
   font-family: "Voyage";
   text-transform: uppercase;
+  background: transparent;
 }
 
 
@@ -9,8 +10,8 @@ body {
   margin: 0;
   padding: 0;
   z-index: -999 !important;
-  /* background-color: rgba(0,0,0,0.00005); */
-  /* background: none !important;; */
+  background-color: rgba(0,0,0,0);
+  /* background: transparent !important;; */
 }
 
 canvas {
