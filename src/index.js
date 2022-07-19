@@ -98,7 +98,7 @@ const tombstone = new Model({
   name: 'tombstone',
   file: './models/tombstone.glb',
   color1: 'blue',
-  color2: '#110047',
+  color2: 'magenta',
   background: '#c1fc47',
   scene: scene,
 })
