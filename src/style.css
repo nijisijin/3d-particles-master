@@ -1,7 +1,6 @@
 * {
   font-family: "Voyage";
   text-transform: uppercase;
-  background: transparent;
 }
 
 
@@ -9,8 +8,9 @@
 body {
   margin: 0;
   padding: 0;
-  z-index: -999 !important;
-  background-color: rgba(0,0,0,0);
+  z-index: -999;
+  /* background-color: rgba(0,0,0,00005); */
+  background-color: none;
   /* background: transparent !important;; */
 }
 
