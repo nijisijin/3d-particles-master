@@ -92,10 +92,10 @@ canvas {
 
 .menu-center a {
   color: #000;
-  padding: 0 1vh;
+  padding: 0 1vw;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
 }
 
 @media(max-width: 100px) {
@@ -110,7 +110,7 @@ canvas {
   padding-left: 0.5vh;
   text-decoration: none;
   position: relative;
-  font-size: 1.5vw;
+  font-size: 1.8vh;
   font-weight: 400;
 }
 
