@@ -27,6 +27,7 @@ canvas {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 999;
 }
 
 .menu {
@@ -42,7 +43,7 @@ canvas {
   align-items: flex-start;
   font-size: 1.4vw;
   transition: 0.3s;
-  /* z-index: 1; */
+  
 }
 
 .menu:hover {
@@ -231,7 +232,7 @@ canvas {
 
 #controllers {
 
-  top: 100px;
+  top: 20vh;
   height: 10vh;
   width: 100%;
   padding-top: 8vh;
@@ -258,7 +259,7 @@ canvas {
 
   font-family: sans-serif;
 
-  margin: 5vh;
+  margin: 4vh;
   padding-left: 0vh;
   padding-right: 5vh;
   /* padding-top: 10vh; */
@@ -266,9 +267,9 @@ canvas {
   
 
   width: 50vw;
-  
-  font-size: 2rem;
+  text-align: center;
+  font-size: 6vh;
   cursor: pointer;
   transition: opacity 0.1s;
-  line-height: 30px;
+  line-height: 5vw;
 }
