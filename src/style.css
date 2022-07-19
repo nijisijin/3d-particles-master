@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   z-index: -999;
-  background: blue;
+  background: rgba(0,0,0,0.05)
 }
 
 canvas {
@@ -41,7 +41,7 @@ canvas {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 1.4vw;
+  font-size: 2vw;
   transition: 0.3s;
   
 }
@@ -52,7 +52,7 @@ canvas {
 
 @media(max-width: 100px) {
   .menu:hover {
-    height: 20vh;
+    height: 18vh;
   }
 }
 
@@ -95,7 +95,7 @@ canvas {
   padding: 0 2vw;
   text-decoration: none;
   font-weight: 300;
-  font-size: 1.2vw;
+  font-size: 1.8vw;
 }
 
 @media(max-width: 100px) {
@@ -110,7 +110,7 @@ canvas {
   padding-left: 2vw;
   text-decoration: none;
   position: relative;
-  font-size: 1.2vw;
+  font-size: 1.8vw;
   font-weight: 400;
 }
 
@@ -232,7 +232,7 @@ canvas {
 
 #controllers {
 
-  top: 20vh;
+  top: 27vh;
   height: 10vh;
   width: 100%;
   padding-top: 8vh;
@@ -266,8 +266,8 @@ canvas {
 
   width: 50vw;
   text-align: center;
-  font-size: 6vh;
+  font-size: 5vh;
   cursor: pointer;
   transition: opacity 0.1s;
-  line-height: 1vh;
+  line-height: 1.6vw;
 }
